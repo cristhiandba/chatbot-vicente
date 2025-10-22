@@ -28,17 +28,26 @@
     }
     @media (max-width: 768px) {
       .chat-container { max-width: 100%; }
+      
       .message .meta {
         font-size: 10px !important;
-        min-width: 50px !important;
-        gap: 8px !important;
-        right: 12px !important;
+        min-width: 60px !important;
+        gap: 10px !important;
+        right: 15px !important;
         bottom: 8px !important;
-        padding-left: 8px !important;
+        padding-left: 12px !important;
+        background: rgba(0,0,0,0.1) !important;
+        border-radius: 4px !important;
       }
+      
       .message .meta .checks {
-        font-size: 11px !important;
+        font-size: 12px !important;
         color: #2196f3 !important;
+        font-weight: bold !important;
+      }
+      
+      .message.user .meta {
+        background: rgba(255,255,255,0.2) !important;
       }
     }
 
