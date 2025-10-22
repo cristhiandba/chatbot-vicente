@@ -89,7 +89,7 @@ function norm(s) {
 }
 
 function cerrarChat() {
-  addMessage('Vicente: “Gracias por conversar conmigo 🙏. Si necesitas algo más, escribe “Hola” para volver a empezar.”', "bot", true);
+  addMessage('Gracias por conversar conmigo 🙏. Si necesitas algo más, escribe “Hola” para volver a empezar.', "bot", true);
 }
 
 function sendMessage() {
@@ -133,7 +133,7 @@ function showMainMenu() {
 // Opción 1: Cuentas
 // ----------------------
 function showOpcion1() {
-  addMessage('Vicente: “Entiendo, ¿en qué tema deseas?”', "bot", true);
+  addMessage('Entiendo, ¿en qué tema deseas?', "bot", true);
   addButtons([
     { label: "Altas ⬆️", onClick: showAltas },
     { label: "Bajas ⬇️", onClick: showBajas },
@@ -176,7 +176,7 @@ function showModificacion() {
 // Opción 2: Asignación de cuentas
 // ----------------------
 function showOpcion2() {
-  addMessage("Vicente: Genial 😃, ¿en qué tema deseas?", "bot", true);
+  addMessage("Genial 😃, ¿en qué tema deseas?", "bot", true);
   addButtons([
     { label: "🔍 Búsqueda de cuenta global", onClick: showBusquedaGlobal },
     { label: "📩 Asignación por BI", onClick: showAsignacionBI },
