@@ -64,6 +64,33 @@
     .header-left img { width: 48px; height: 48px; border-radius: 50%; }
     .header-right img { width: 40px; height: 40px; }
 
+    .disclaimer-box {
+      background-color: #fff8c4; /* amarillo pálido */
+      color: #000;               /* texto negro */
+      font-size: 13px;
+      padding: 10px 16px;
+      margin: 0 auto;
+      border-radius: 18px;       /* bordes redondeados */
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      line-height: 1.3;
+      display: inline-block;
+      max-width: 90%;
+      width: auto;
+      font-weight: bold;
+    }
+    
+    .disclaimer-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 16px;
+    }
+
+
+
+
     .messages {
       flex: 1;
       padding: 10px;
@@ -72,6 +99,7 @@
       background-size: auto;
       display: flex;
       flex-direction: column;
+      position: relative;
     }
 
     .message {
@@ -190,10 +218,17 @@
         <span>Vicente - Asistente Virtual</span>
       </div>
       <div class="header-right">
-        <img src="veeva.png" alt="Veeva">
+        <img src="logo.png" alt="logo">
+      </div>
+
+    </div>
+    <div class="messages" id="messages">
+      <div class="disclaimer-wrapper">
+        <div class="disclaimer-box">
+          🔒 La información compartida en este chat es confidencial y de uso exclusivo interno.<br>No debe ser divulgada, reproducida ni compartida fuera de la compañía.
+        </div>
       </div>
     </div>
-    <div class="messages" id="messages"></div>
     <div class="input-area">
       <input type="text" id="userInput" placeholder="Escribe un mensaje...">
       <button onclick="sendMessage()">Enviar</button>
